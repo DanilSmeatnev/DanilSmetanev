@@ -28,7 +28,7 @@ for i in xrange(1,256):
         fn_min = fn
         thresh = i
 
-ret, otsu = cv2.threshold(blur,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
+ret, otsu = cv2.threshold(blur,thresh,255,cv2.THRESH_BINARY)
 
 cv2.imshow("image.jpg", otsu)
 cv2.waitKey(0)
